@@ -75,7 +75,7 @@ header {
   background-color: #ECEFF1;
 }
 .Portfolio-content {
-  width: 920px;
+  width: 100%;
   padding: 90px 0;
   margin: 0 auto 0;
 }
@@ -180,7 +180,10 @@ i {
 .left-content {
   width: 50%;
   float: left;
-  text-align: center;
+}
+.left-content-content {
+  width: 105px;
+  margin: 0 auto;
 }
 .my-face {
   width: 250px;
@@ -233,7 +236,7 @@ footer {
   font-size: 16px;
   color: #FAFAFA;
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:767px) {
   header {
     height: 50px;
     padding: 5px 0;
@@ -280,6 +283,9 @@ footer {
   .main-visual-content {
     width: 90%
   }
+  .Strenght-text {
+    text-align: center;
+  }
   .Portfolio-content {
     width: 90%;
   }
@@ -289,14 +295,20 @@ footer {
   .Portfolio-box:nth-child(odd) {
     display: none;
   }
+  .Portfolio-box:last-child {
+    margin: 20px auto 0;
+  }
   .Portfolio-box {
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .Feature-box {
     width: 90%;
     float: none;
-    margin-right: 0;
+    margin: 0 auto;
+  }
+  .Feature-box:last-child {
+    margin: 0 auto;
   }
   .Profile-content {
     width: 90%;
@@ -304,14 +316,22 @@ footer {
   .social {
     margin-top: 20px;
   }
+  .discription-title {
+    text-align: center;
+  }
+  .discription-text {
+    text-align: center;
+  }
   .my-face {
     margin-top: 30px;
   }
   .right-content {
     float: none;
-    width: 90%
+    width: 90%;
+    margin: 0 auto;
   }
   .left-content {
+    width: 100%;
     float: none;
   }
   .Contact-box {
